@@ -1,0 +1,42 @@
+<!--     website by qe7      -->
+<!--    I skiddie too hard   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Bio</title>
+    <link rel="icon" href="images/profile.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <div class="content">
+            <div class="profile">
+                <img src="images/profile.gif" alt="Profile Picture">
+                <h1>Ghosted</h1>
+                <p>Probably playing Roblox</p>
+                <button onclick="playAudio()">Play Music</button>
+                <button onclick="redirectToSpotify()">My Spotify</button>
+
+<script>
+function redirectToSpotify() {
+    window.location.href = "https://open.spotify.com/user/313rnqj3wxiy4be6sgb4cdr2cnaq#context";
+}
+</script>
+
+            </div>
+        </div>
+    </div>
+    <audio id="audio" autoplay loop preload="auto">
+        <source src="music/[vile.sh]-Forever.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        function playAudio() {
+            var audio = document.getElementById("audio");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
